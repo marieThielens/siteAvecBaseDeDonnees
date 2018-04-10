@@ -14,15 +14,11 @@
 <header>
 <section id="sectionHeader">
 
-      <img src="/assets/images/logos/1_Primary_logo_on_transparent_227x69.png" alt="logo">
-
     <div id="nav">
       <nav>
         <ul>
-          <li><a href="index.php">Accueil</a></li>
-          <li><a href="bibliotheque.php">Bibliothèque</a></li>
-          <li><a href="contact.php">Contact</a></li>
-          <li><a href="aPropos.php">A propos</a></li>
+          <li><a href="index.php">Bibliothèque</a></li>
+          <li><a href="inscription.php">S'inscrire</a></li>
         </ul>
       </nav>
       </div>
@@ -30,3 +26,11 @@
 </section>
 
 </header>
+
+<?php
+session_start();
+if (isset($_SESSION['user_id']) AND isset($_SESSION['user_username']))
+{
+    echo 'Bonjour ' . $_SESSION['user_username'];
+}
+?>

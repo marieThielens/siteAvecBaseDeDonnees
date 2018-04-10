@@ -7,7 +7,7 @@
 
 try{
 // A changer : dbname=nomDeVotreBaseDeDonnées  array= pour activer les erreurs requetes sql
-$bdd = new PDO('mysql:host=localhost;dbname=alloFilms;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+$bdd = new PDO('mysql:host=localhost;dbname=alloFilms;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 
 // On traite l'erreur (ex probleme de mot de passe, php rsique d'afficher
