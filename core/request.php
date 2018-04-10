@@ -34,7 +34,7 @@ if(isset($_POST['ajout'])){ // ajout = name du bouton
 
 if(isset($_POST['connection'])){
 
-    //  Récupération de l'utilisateur et de son pass hashé
+    //  Récupération de l'utilisateur et de son pass hashé   where colonne = nom variable $
     $req = $bdd->prepare('SELECT user_id, user_password FROM users WHERE user_username = :user_username');
     $req->execute(array(
         'user_username' => $user_username));
