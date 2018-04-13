@@ -26,11 +26,3 @@
 </section>
 
 </header>
-
-<?php
-session_start();
-if (isset($_SESSION['user_id']) AND isset($_SESSION['user_username']))
-{
-    echo 'Bonjour ' . $_SESSION['user_username'];
-}
-?>

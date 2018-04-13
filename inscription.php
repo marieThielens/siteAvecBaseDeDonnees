@@ -1,5 +1,9 @@
-<?php include "include/header.php"; 
-      include "core/request.php"; ?>
+<?php
+
+include "include/header.php"; 
+include "core/request.php";
+
+?>
 
 <h1 class="center">Page de contact</h1>
 
@@ -21,27 +25,30 @@
 <div id="login">
     <p>Se connecter</p>
 
-        <form name='form-login' action="" method="post">
+        <form action="" method="post">
         <fieldset>
-            Pseudo: <input type="text" name="user_username" placeholder="pseudo">
-            Mot de passe:  <input type="password" name="user_password" placeholder="Mot de passe">
-            <input type="checkbox" name="" id="" value="connection">
-            <label for="">Connection automatique</label>
+             <input type="text" name="user_username" placeholder="pseudo">
+              <input type="password" name="user_password" placeholder="Mot de passe">
+            <!-- <input type="checkbox" name="" id="" value="connection">
+            <label for="">Connection automatique</label> -->
             <button type="submit" name="connection">Se connecter</button>
         </fieldset>
-
+    </form>
 
 <!-- ....................................Se désinscrire...................................-->
 <div id="delete">
     <p>Se désinscrire</p>
     <fieldset>
         <form action="" method="post">
-            <input type="mail" name="user_username" placeholder="Votre mail">
+            <input type="text" name="user_username" placeholder="Nom d utilisateur">
             <button name="delete">Se désinscrire</button>
         </form>
     </fieldset>
-
-
 </div>
+
+
+<!--  ......................Déconnection...............-->
+ 
+ <button type="submit" name="deconnection"><a href="core/deconnect.php">deconnection</a> </button>
 
 <?php include("include/footer.php"); ?>

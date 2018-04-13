@@ -1,13 +1,11 @@
 <?php
-function debug($var){
+/* Fonction pour débugger. Ex : débugger la variable result => debug($result)*/
+function dd($variable){
   echo '<pre>';
-  print_r($var);
-    echo '</pre>';
+  var_dump($variable);
+  echo '</pre>';
 }
-function dd($var){
-  debug($var);
-  die();
-}
+
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
