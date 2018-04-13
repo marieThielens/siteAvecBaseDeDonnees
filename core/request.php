@@ -47,7 +47,6 @@ if(isset($_POST['connection']) && isset($_POST['user_username']) && isset($_POST
     {
         if ($isPasswordCorrect) {
             session_start();
-            $_SESSION['user_id'] = $resultat['user_id'];
             $_SESSION['user_username'] = $user_username;
             echo 'Vous êtes connecté ' . $user_username . '!';
         }

@@ -2,6 +2,14 @@
 
 Les données se trouvent dans une base de données. Le genre, le titre, un résumé.
 
+Une page ou l'on peut choisir son film par genre (les films sont dans une base de donnée):
+
+<img src="assets/images/miniature1.png" width="50%">
+
+Une page ou l'on peut s'inscrire, se connecter, se désinscrire, se déconnecter :
+
+<img src="assets/images/miniature3.png" width="50%">
+
 ## Ajout de la base donnée
 
 - La base de données est incluse. Il s'agit du fichier .sql
@@ -42,6 +50,8 @@ La page sur laquelle vous êtes redirigé quand vous choisissez un genre de film
 <img src="assets/images/miniature2.png" width="50%">
 
 ### la page inscription
+
+<img src="assets/images/miniature3.png" width="50%">
 
 - inclure le fichier request.php `<?php include "core/request.php"; ?>`
 - 3 bouttons :un pour l'ajout, un pour supprimer et un qui verifie si l'utilisateur existe dans la db.
